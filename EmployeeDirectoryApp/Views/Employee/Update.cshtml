@@ -1,0 +1,57 @@
+﻿@model Employee
+<form method="post" asp-action="Update">
+    <div class="pb-3 mt-4">
+        <div class="row pb-2">
+            <h2 class="text-primary">Update Employee Info</h2>
+            <hr />
+        </div>
+        <div asp-validation-summary="All"></div>
+        <div class="mb-3">
+            <label asp-for="Gender"></label>
+            <input asp-for="Gender" class="form-control">
+            <span asp-validation-for="Gender" class="text-danger"></span>
+        </div>
+        <div class="mb-3">
+            <label asp-for="Title"></label>
+            <input asp-for="Title" class="form-control">
+            <span asp-validation-for="Title" class="text-danger"></span>
+        </div>
+        <div class="mb-3">
+            <label asp-for="GivenName"></label>
+            <input asp-for="GivenName" class="form-control">
+            <span asp-validation-for="GivenName" class="text-danger"></span>
+        </div>
+        <div class="mb-3">
+            <label asp-for="MiddleInitial"></label>
+            <input asp-for="MiddleInitial" class="form-control">
+            <span asp-validation-for="MiddleInitial" class="text-danger"></span>
+        </div>
+        <div class="mb-3">
+            <label asp-for="Surname"></label>
+            <input asp-for="Surname" class="form-control">
+            <span asp-validation-for="Surname" class="text-danger"></span>
+        </div>
+        <div class="mb-3">
+            <label asp-for="City"></label>
+            <input asp-for="City" class="form-control">
+            <span asp-validation-for="City" class="text-danger"></span>
+        </div>
+        <div class="mb-3">
+            <label asp-for="State"></label>
+            <input asp-for="State" class="form-control">
+            <span asp-validation-for="State" class="text-danger"></span>
+        </div>
+        <div class="mb-3">
+            <label asp-for="ZipCode"></label>
+            <input asp-for="ZipCode" class="form-control">
+            <span asp-validation-for="ZipCode" class="text-danger"></span>
+        </div>
+        <div class="mb-3">
+            <label asp-for="Birthday"></label>
+            <input asp-for="Birthday" class="form-control">
+            <span asp-validation-for="Birthday" class="text-danger"></span>
+        </div>
+        <button type="submit" class="btn btn-primary" style="width: 150px">Update</button>
+        <a asp-controller="Employee" asp-action="Index" class="btn btn-secondary" style="width:150px">Cancel</a>
+    </div>
+</form>

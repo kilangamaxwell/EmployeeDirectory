@@ -1,0 +1,58 @@
+﻿@model Employee
+<form method="post" asp-action="Delete">
+    <input asp-for="Id" hidden/>
+    <div class="pb-3 mt-4">
+        <div class="row pb-2">
+            <h2 class="text-primary">Delete Employee Info</h2>
+            <hr />
+        </div>
+      
+        <div class="mb-3">
+            <label asp-for="Gender"></label>
+            <input asp-for="Gender" disabled class="form-control">
+       
+        </div>
+        <div class="mb-3">
+            <label asp-for="Title"></label>
+            <input asp-for="Title" disabled class="form-control">
+         
+        </div>
+        <div class="mb-3">
+            <label asp-for="GivenName"></label>
+            <input asp-for="GivenName" disabled class="form-control">
+       
+        </div>
+        <div class="mb-3">
+            <label asp-for="MiddleInitial"></label>
+            <input asp-for="MiddleInitial" disabled class="form-control">
+          
+        </div>
+        <div class="mb-3">
+            <label asp-for="Surname"></label>
+            <input asp-for="Surname" disabled class="form-control">
+        
+        </div>
+        <div class="mb-3">
+            <label asp-for="City"></label>
+            <input asp-for="City" disabled class="form-control">
+          
+        </div>
+        <div class="mb-3">
+            <label asp-for="State"></label>
+            <input asp-for="State" disabled class="form-control">
+         
+        </div>
+        <div class="mb-3">
+            <label asp-for="ZipCode"></label>
+            <input asp-for="ZipCode" disabled class="form-control">
+          
+        </div>
+        <div class="mb-3">
+            <label asp-for="Birthday"></label>
+            <input asp-for="Birthday" disabled class="form-control">
+         
+        </div>
+        <button type="submit" class="btn btn-danger" style="width: 150px">Delete</button>
+        <a asp-controller="Employee" asp-action="Index" class="btn btn-secondary" style="width:150px">Cancel</a>
+    </div>
+</form>
